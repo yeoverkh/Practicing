@@ -1,5 +1,7 @@
 package Exercises;
 
+import Exercises.models.ListNode;
+
 public class RemoveLinkedListElements {
     public static void main(String[] args) {
         System.out.println(removeElements(new ListNode(1, new ListNode(6, new ListNode(2, new ListNode(3,

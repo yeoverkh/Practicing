@@ -1,6 +1,6 @@
 package Exercises;
 
-import java.util.List;
+import Exercises.models.ListNode;
 
 public class IsLinkedListCycled {
     public static void main(String[] args) {

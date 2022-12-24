@@ -1,6 +1,6 @@
 package Exercises;
 
-import java.util.*;
+import Exercises.models.ListNode;
 
 public class MergeTwoSortedListsListNode {
     public static void main(String[] args) {

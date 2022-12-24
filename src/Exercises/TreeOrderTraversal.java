@@ -1,6 +1,6 @@
 package Exercises;
 
-import com.sun.source.tree.Tree;
+import Exercises.models.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -27,15 +27,12 @@ public class TreeOrderTraversal {
         List<Integer> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        queue.add(null);
         while (!queue.isEmpty()) {
-            TreeNode curr = queue.poll();
-            if (curr == null) {
-                continue;
-            }
-            result.add(curr.val);
-            if (curr.left != null) queue.add(curr.left);
-            if (curr.right != null) queue.add(curr.right);
+            TreeNode current = queue.poll();
+            if (current == null) continue;
+            result.add(current.val);
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
         }
         return result;
     }
