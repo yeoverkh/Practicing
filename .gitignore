@@ -1,0 +1,8 @@
+# IntelliJ
+out/
+
+.idea/
+
+Test.iml
+
+people.bin
